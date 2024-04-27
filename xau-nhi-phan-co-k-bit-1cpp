@@ -33,17 +33,21 @@ void nhiphan(){
 	else ok=false;
 }
 int main(){
-	khoitao();
+	int t;
+	cin>>t;
+	while(t--){
+		khoitao();
 	while(ok){
-		int k=0;
+		int k1=0;
 		for(int j=0;j<n;j++){
 			if(a[j]==1){
-				k++;
+				k1++;
 			}
 		}
-		if(k==2){
+		if(k1==k){
 			inra();
 		}
 		nhiphan();
+		}
 	}
 }
